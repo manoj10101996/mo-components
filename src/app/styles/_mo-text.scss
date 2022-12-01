@@ -1,0 +1,14 @@
+@use "sass:map";
+
+@mixin line-clamp() {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@for $i from 1 through 10 {
+  .mo-lines-#{$i} {
+    @include line-clamp();
+    -webkit-line-clamp: #{$i};
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,353 @@
+<div class="p-5 container">
+  <!--
+    <div class="mb-3">
+      <h3>Input - small</h3>
+
+    </div>
+  -->
+  <div class="mb-3">
+    <div class="mb-3">
+      <h3>List - Fill</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <ul
+          [theme]="color"
+          [outline]="true"
+          [fill]="true"
+          [hover]="true"
+          MoList
+        >
+          <li>List Mo - 1</li>
+          <li>List Mo - 2</li>
+          <li>List Mo - 3</li>
+          <li>List Mo - 4</li>
+        </ul>
+      </ng-template>
+    </div>
+    <div class="mb-3">
+      <h3>List - Outline</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <ul [theme]="color" [outline]="true" [hover]="true" MoList>
+          <li>List Mo - 1</li>
+          <li>List Mo - 2</li>
+          <li>List Mo - 3</li>
+          <li>List Mo - 4</li>
+        </ul>
+      </ng-template>
+    </div>
+    <div class="mb-3">
+      <h3>List</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <ul [theme]="color" [hover]="true" MoList>
+          <li>List Mo - 1</li>
+          <li>List Mo - 2</li>
+          <li>List Mo - 3</li>
+          <li>List Mo - 4</li>
+        </ul>
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <div class="mb-3">
+        <h3>Alert - Fill</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div
+            [theme]="color"
+            [square]="true"
+            [fill]="true"
+            [invite]="true"
+            [position]="'left'"
+            MoAlert
+          >
+            This is alert message
+          </div>
+        </ng-template>
+      </div>
+      <div class="mb-3">
+        <h3>Alert - Invite</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div
+            [theme]="color"
+            [square]="true"
+            [invite]="true"
+            [position]="'left'"
+            MoAlert
+          >
+            This is alert message
+          </div>
+        </ng-template>
+      </div>
+      <!--  -->
+      <div class="mb-3">
+        <h3>Alert - Outline</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div [theme]="color" [square]="true" [outline]="true" MoAlert>
+            This is alert message
+          </div>
+        </ng-template>
+      </div>
+      <!--  -->
+      <div class="mb-3">
+        <h3>Alert - Square</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div [theme]="color" [square]="true" MoAlert>
+            This is alert message
+          </div>
+        </ng-template>
+      </div>
+      <!--  -->
+      <div class="mb-3">
+        <h3>Alert</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div [theme]="color" MoAlert>
+            This is alert message
+          </div>
+        </ng-template>
+      </div>
+      <!--  -->
+      <hr />
+      <div class="mb-3">
+        <h3>Card - Invite - header</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div [theme]="color" [invite]="true" [square]="true" MoCard>
+            <div class="mo-card-header">
+              Mo Card Header
+            </div>
+            <div class="mo-card-body">
+              Mo-card - Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book. It
+              has survived not only five centuries,
+            </div>
+            <div class="mo-card-footer">
+              Mo Card Footer
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <!--  -->
+      <hr />
+      <div class="mb-3">
+        <h3>Card - Hightlight - header</h3>
+        <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+          <div [theme]="color" [header]="true" [square]="true" MoCard>
+            <div class="mo-card-header">
+              Mo Card Header
+            </div>
+            <div class="mo-card-body">
+              Mo-card - Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book. It
+              has survived not only five centuries,
+            </div>
+            <div class="mo-card-footer">
+              Mo Card Footer
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <!--  -->
+      <hr />
+      <h3>Card - Square</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <div [theme]="color" [square]="true" MoCard>
+          <div class="mo-card-header">
+            Mo Card Header
+          </div>
+          <div class="mo-card-body">
+            Mo-card - Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries,
+          </div>
+          <div class="mo-card-footer">
+            Mo Card Footer
+          </div>
+        </div>
+      </ng-template>
+    </div>
+    <!--  -->
+    <hr />
+    <div class="mb-3">
+      <h3>Card</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <div [theme]="color" MoCard>
+          <div class="mo-card-header">
+            Mo Card Header
+          </div>
+          <div class="mo-card-body">
+            Mo-card - Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries,
+          </div>
+          <div class="mo-card-footer">
+            Mo Card Footer
+          </div>
+        </div>
+      </ng-template>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <hr />
+    <div class="mb-3">
+      <h3>Radio</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <div [size]="'small'" [theme]="color" MoRadio>
+          <input
+            type="radio"
+            name="colors"
+            [attr.id]="'mo-radio-' + color"
+            checked
+          />
+          <label [attr.for]="'mo-radio-' + color">
+            Radio - {{color | titlecase}}
+          </label>
+        </div>
+      </ng-template>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <hr />
+    <div class="mb-3">
+      <h3>Checkbox</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <div [size]="'small'" [theme]="color" MoCheckbox>
+          <input type="checkbox" [attr.id]="'mo-checkbox-' + color" checked />
+          <label [attr.for]="'mo-checkbox-' + color">
+            Checkbox - {{color | titlecase}}
+          </label>
+        </div>
+      </ng-template>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <hr />
+    <div class="mb-3">
+      <h3>Input - small</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <input
+          type="text"
+          placeholder="Enter text"
+          [placeholder]="color"
+          [size]="'small'"
+          [theme]="color"
+          MoInput
+        />
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Input - Medium (Default)</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <input
+          type="text"
+          placeholder="Enter text"
+          [placeholder]="color"
+          [theme]="color"
+          MoInput
+        />
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Input - Large</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <input
+          type="text"
+          placeholder="Enter text"
+          [size]="'large'"
+          [placeholder]="color"
+          [theme]="color"
+          MoInput
+        />
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Input - Square</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <input
+          type="text"
+          placeholder="Enter text"
+          [square]="true"
+          [placeholder]="color"
+          [theme]="color"
+          MoInput
+        />
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Input - Rounded</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <input
+          type="text"
+          placeholder="Enter text"
+          [round]="true"
+          [placeholder]="color"
+          [theme]="color"
+          MoInput
+        />
+      </ng-template>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <hr />
+    <div class="mb-3">
+      <h3>Button - small</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <button MoBtn [size]="'small'" [theme]="color">
+          MoBtn
+        </button>
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Button - Medium (Default)</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <button MoBtn [theme]="color">
+          MoBtn
+        </button>
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Button - Large</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <button MoBtn [size]="'large'" [theme]="color">
+          MoBtn
+        </button>
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Button - Square</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <button MoBtn [square]="true" [theme]="color">
+          MoBtn
+        </button>
+      </ng-template>
+    </div>
+    <!--  -->
+    <div class="mb-3">
+      <h3>Button - Rounded</h3>
+      <ng-template ngFor let-color [ngForOf]="colors" let-i="index">
+        <button MoBtn [round]="true" [theme]="color">
+          MoBtn
+        </button>
+      </ng-template>
+    </div>
+  </div>
+</div>
